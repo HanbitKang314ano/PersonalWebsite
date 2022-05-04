@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .right-centered {
+            position: fixed;
+            top: 50%;
+            left: 80%;
+            /* bring your own prefixes */
+            transform: translate(-50%, -50%);
+        }
+        #bottom-right {
+            position: absolute;
+            bottom: 3%;
+            left: 90%;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .topnav a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+        a:link {
+            color: #04AA6D;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:visited {
+            color: #04AA6D;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #04AA6D;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+        a:active {
+            color: #04AA6D;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body style="background-color:#B1C4C8;">
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="Portfolio.html">Portfolio</a>
+        <a href="Qualifications.html">Qualifications</a>
+        <a href="Service.html">Service</a>
+    </div>
+
+    <div id="bottom-right">
+        <button onclick="change()">Dark Mode</button>
+    </div>
+
+    <h1>Landing Page</h1>
+    <div style = "position:relative; top:20px";>
+        <p>
+            Welcome to my home page! My name is Hanbit Kang and I'm a junior in Computer Science!
+        </p>
+        <p>
+            I really like to talk to people and get to know who they are. I believe relationships and
+        </p>
+        <p>
+            connections is one of the key components of making a successful company. I wish through
+        </p>
+        <p>
+            this site, you get to know me better and one day, I'll get to know you too! :)
+        </p>
+    </div>
+    <div style = "position:relative; top:100px";>
+        <a href="Portfolio.html">Start here to know more...</a>
+    </div>
+
+    <div class="right-centered">
+        <img src="intro_pic.jpg" alt="just me..."
+            width="450"
+            height="600"
+        >
+    </div>
+
+    <script type="text/javascript" src="toggle.js"></script>
+</body>
+</html>
